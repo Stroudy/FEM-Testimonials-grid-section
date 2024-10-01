@@ -1,0 +1,156 @@
+:root {
+  --clr-one: hsl(263, 55%, 52%); /*Moderate violet*/
+  --clr-two: hsl(217, 19%, 35%); /*Very dark grayish blue*/
+  --clr-three: hsl(219, 29%, 14%); /*Very dark blackish blue*/
+  --clr-four: hsl(0, 0%, 100%); /*White*/
+  --clr-five: hsl(264, 82%, 70%); /*Light purple*/
+
+  --clr-neutral-one: hsl(0, 0%, 81%); /*Light gray*/
+  --clr-neutral-two: hsl(210, 46%, 95%); /*Light grayish blue*/
+  --clr-neutral-three: hsl(0, 0%, 100%);
+
+  --fs-11: 0.688rem;
+  --fs-13: 0.813rem;
+  --fs-20: 1.25rem;
+
+  --ff: "Barlow Semi Condensed";
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500; /*Medium*/
+  src: url("../fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600; /*SemiBold*/
+  src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: var(--fs-13);
+  font-weight: 500;
+  line-height: 1.384; /* 18 / 13 = 1.384 figma file */
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  font-weight: normal;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  max-width: 20.438rem;
+  min-height: 100svh;
+  margin: 4.438rem auto;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--clr-neutral-three);
+}
+
+.blog__article {
+  padding: 2rem;
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.blog__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog__name-verified {
+  margin-left: 0.938rem;
+  line-height: 1;
+}
+
+.blog__name {
+  font-size: var(--fs-13);
+  margin-bottom: 0.25rem;
+}
+
+.blog__verified {
+  opacity: 50%;
+  font-size: var(--fs-11);
+}
+
+.blog__img {
+  border-radius: 50%;
+  border: solid 2px var(--clr-five);
+}
+
+.blog__title {
+  margin-top: 1.125rem;
+  font-family: var(--ff);
+  font-weight: 700;
+  font-size: var(--fs-20);
+  line-height: 1.2;
+}
+
+.blog__text {
+  margin-top: 1rem;
+  font-size: var(--fs-13);
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.blog__article:nth-child(1) .blog__title {
+  margin-bottom: 2.5rem;
+}
+
+.blog__article:nth-child(1) {
+  background-color: var(--clr-one);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 83% 0%;
+}
