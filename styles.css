@@ -73,7 +73,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  text-wrap: balance;
   font-weight: normal;
 }
 
@@ -89,6 +88,7 @@ body {
   max-width: 20.438rem;
   min-height: 100svh;
   margin: 4.438rem auto;
+  background-color: var(--clr-neutral-two);
 }
 
 .blog {
@@ -126,7 +126,6 @@ body {
 
 .blog__img {
   border-radius: 50%;
-  border: solid 2px var(--clr-five);
 }
 
 .blog__title {
@@ -144,13 +143,54 @@ body {
   opacity: 70%;
 }
 
+/* Daniel */
+
+.blog__article:nth-child(1) .blog__img,
+.blog__article:nth-child(4) .blog__img {
+  border: solid 2px var(--clr-five);
+}
+
 .blog__article:nth-child(1) .blog__title {
   margin-bottom: 2.5rem;
+}
+
+.blog__article:nth-child(1) .blog__text {
+  color: var(--clr-neutral-one);
+  max-width: 15.438rem;
 }
 
 .blog__article:nth-child(1) {
   background-color: var(--clr-one);
   background-image: url(./images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: 83% 0%;
+  background-position: 89% 0%;
+}
+
+.blog__article:nth-child(2) {
+  background-color: var(--clr-two);
+}
+
+.blog__article:nth-child(2) .blog__text {
+  max-width: 16.438rem;
+}
+
+.blog__article:nth-child(3),
+.blog__article:nth-child(5) {
+  background-color: var(--clr-four);
+  color: var(--clr-two);
+}
+
+.blog__article:nth-child(4) {
+  background-color: var(--clr-three);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-13);
+  color: var(--clr-two);
+  margin-top: 0.313rem;
+}
+.attribution a {
+  margin-left: 0.188rem;
 }
