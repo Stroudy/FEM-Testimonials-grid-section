@@ -86,7 +86,7 @@ h6 {
 }
 
 body {
-  font-family: Barlow Semi Condensed;
+  font-family: var(--ff);
   font-weight: 500;
   max-width: var(--max-width-mobile);
   min-height: 100svh;
