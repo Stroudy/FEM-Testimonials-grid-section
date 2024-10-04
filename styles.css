@@ -25,7 +25,7 @@
   font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 500; /*Medium*/
-  src: url("../fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2");
+  src: url("./fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2");
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 600; /*SemiBold*/
-  src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2");
+  src: url("./fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2");
 }
 
 *,
