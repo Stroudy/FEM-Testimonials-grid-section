@@ -90,6 +90,7 @@ body {
   font-weight: 500;
   max-width: var(--max-width-mobile);
   min-height: 100svh;
+  margin: 4.438rem auto;
   margin-inline: auto;
   background-color: var(--clr-neutral-two);
 }
@@ -245,6 +246,7 @@ body {
 @media only screen and (min-width: 66.563rem) {
   body {
     max-width: var(--max-width-desktop);
+    margin: auto;
   }
 
   .blog {
