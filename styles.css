@@ -110,6 +110,7 @@ body {
   padding: 2rem;
   background-color: gray;
   border-radius: 8px;
+  box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog__header {
