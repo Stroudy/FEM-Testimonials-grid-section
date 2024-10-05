@@ -85,6 +85,10 @@ h6 {
   isolation: isolate;
 }
 
+html {
+  padding: 1rem;
+}
+
 body {
   font-family: var(--ff);
   font-weight: 500;
