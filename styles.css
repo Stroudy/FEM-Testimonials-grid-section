@@ -256,7 +256,6 @@ body {
 
   .blog {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 17.75rem 16.625rem;
     row-gap: 1.5rem;
     column-gap: 1.875rem;
   }
